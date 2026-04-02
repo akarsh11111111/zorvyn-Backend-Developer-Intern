@@ -13,12 +13,19 @@ import { requestContext } from "./middlewares/requestContext";
 const app = express();
 
 morgan.token("reqid", (req: Request) => req.requestId ?? "-");
+morgan.token("latency", (req: Request) => {
+  if (!req.requestStartTimeMs) {
+    return "-";
+  }
+
+  return String(Date.now() - req.requestStartTimeMs);
+});
 
 app.use(helmet());
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: env.jsonBodyLimit }));
 app.use(requestContext);
-app.use(morgan(":method :url :status :response-time ms reqId=:reqid"));
+app.use(morgan(":method :url :status :response-time ms total=:latency ms reqId=:reqid"));
 
 app.use(
   rateLimit({

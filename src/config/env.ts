@@ -17,6 +17,7 @@ export const env = {
   port: Number(getEnv("PORT", "5000")),
   jwtSecret: getEnv("JWT_SECRET", "dev_secret"),
   jwtExpiresIn: getEnv("JWT_EXPIRES_IN", "1d"),
+  jsonBodyLimit: getEnv("JSON_BODY_LIMIT", "1mb"),
   dataFile: getEnv("DATA_FILE", "src/data/store.json"),
   idempotencyTtlMs: Number(getEnv("IDEMPOTENCY_TTL_MS", "600000")),
   rateLimitWindowMs: Number(getEnv("RATE_LIMIT_WINDOW_MS", "60000")),
