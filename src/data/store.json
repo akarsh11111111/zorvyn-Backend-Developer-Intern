@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "name": "Akarsh Vidyarthi",
+      "email": "vidyarthiakarsh@gmail.com",
+      "passwordHash": "$2b$10$u570L9WDvSnNICaEtWVPD.zp2s1CbuLTtsBQTgKupMdBQRvbcCp92",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2026-04-02T04:12:55.404Z",
+      "updatedAt": "2026-04-02T04:12:55.404Z"
+    },
+    {
+      "id": "4cf397ec-7195-4a58-a1b9-dfae846b604b",
+      "name": "System Admin",
+      "email": "admin@finance.local",
+      "passwordHash": "$2b$10$0wDRuXib3gpNFyyNfxJkr.iFbG1ux5gTuMCmQ8lfV3VzcK.9IBDpG",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2026-04-02T04:26:05.009Z",
+      "updatedAt": "2026-04-02T04:26:05.009Z"
+    }
+  ],
+  "records": [
+    {
+      "id": "afc9b816-0c5e-4c1e-8847-15746ff56f7a",
+      "amount": 1200,
+      "type": "income",
+      "category": "Consulting",
+      "date": "2026-04-01",
+      "notes": "April invoice",
+      "createdBy": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "createdAt": "2026-04-02T04:45:05.255Z",
+      "updatedAt": "2026-04-02T04:45:05.255Z",
+      "version": 1,
+      "isDeleted": false
+    }
+  ],
+  "audits": [
+    {
+      "id": "b78f1cbe-202d-4b91-a180-9348f0113355",
+      "actorId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "actorEmail": "vidyarthiakarsh@gmail.com",
+      "actorRole": "admin",
+      "action": "auth.login",
+      "entityType": "auth",
+      "entityId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "timestamp": "2026-04-02T04:26:45.274Z",
+      "metadata": {
+        "email": "vidyarthiakarsh@gmail.com"
+      }
+    },
+    {
+      "id": "73b66fa9-54d7-43b6-98d5-8d1d08d9bce0",
+      "actorId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "actorEmail": "vidyarthiakarsh@gmail.com",
+      "actorRole": "admin",
+      "action": "auth.login",
+      "entityType": "auth",
+      "entityId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "timestamp": "2026-04-02T04:26:59.459Z",
+      "metadata": {
+        "email": "vidyarthiakarsh@gmail.com"
+      }
+    },
+    {
+      "id": "7e1d22bc-533d-4892-a2c0-0e3577cdcba1",
+      "actorId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "actorEmail": "vidyarthiakarsh@gmail.com",
+      "actorRole": "admin",
+      "action": "auth.login",
+      "entityType": "auth",
+      "entityId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "timestamp": "2026-04-02T04:45:05.224Z",
+      "metadata": {
+        "email": "vidyarthiakarsh@gmail.com"
+      }
+    },
+    {
+      "id": "ff79edc5-bfa0-4f62-af56-134b8c08194d",
+      "actorId": "08c829fc-2b53-44fc-be65-08723e504e6c",
+      "actorEmail": "vidyarthiakarsh@gmail.com",
+      "actorRole": "admin",
+      "action": "record.create",
+      "entityType": "record",
+      "entityId": "afc9b816-0c5e-4c1e-8847-15746ff56f7a",
+      "timestamp": "2026-04-02T04:45:05.275Z",
+      "metadata": {
+        "type": "income",
+        "category": "Consulting",
+        "amount": 1200
+      }
+    }
+  ]
+}
